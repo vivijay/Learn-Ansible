@@ -1,0 +1,13 @@
+- name: Print the variable from the prompt
+  hosts: local
+  vars_prompt:
+  - name: Username
+    prompt: Please enter your username
+    private: false # you can see this value entered on the screen 
+  - name: Password
+    prompt: Enter your password
+    private: true # this value will not be visible on the screen 
+  tasks: 
+  - name: Print the value from theh prompt 
+    ansible.builtin.debug:
+      msg: "username: {{Username}} , password: {{Password}}"
