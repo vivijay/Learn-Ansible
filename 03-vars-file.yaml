@@ -1,0 +1,9 @@
+- name: Vars from file
+  host: localhost # Managing the ansible server itself 
+  vars_files
+    - variables.yaml
+  tasks:
+    - name: Print the variabless
+      ansible.builtin.debug:
+      msg: "Hello I am learning {{Course}} from {{Trainer}} withh {{Duration }} hrs"
+
