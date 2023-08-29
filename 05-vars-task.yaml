@@ -13,4 +13,4 @@
       land: "3"
       house: "5"
     ansible.builtin.debug:
-      msg: " I have {{money}} with {{land} with {{house}}"
+      msg: " I have {{money}} with {{land}} with {{house}}"
