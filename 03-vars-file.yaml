@@ -1,9 +1,12 @@
 - name: Vars from file
   host: localhost # Managing the ansible server itself 
-  vars_files
+  vars_files:
     - variables.yaml
   tasks:
     - name: Print the variabless
       ansible.builtin.debug:
       msg: "Hello I am learning {{Course}} from {{Trainer}} withh {{Duration }} hrs"
 
+
+
+# ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 03-vars-file.yaml
