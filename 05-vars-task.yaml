@@ -1,0 +1,16 @@
+- name: Showing the task level var
+  hosts: localhost
+  vars:
+  - money: "1000"
+    land: "3"
+  tasks:
+  - name: Inherit value from playlevel 
+    ansible.builtin.debug:
+      msg: " I have {{money}} with {{land}}"
+  - name: Inherit and overide 
+    vars:
+    - money: "10000"
+      land: "3"
+      house: "5"
+    ansible.builtin.debug:
+      msg: " I have {{money}} with {{land} with {{house}}"
