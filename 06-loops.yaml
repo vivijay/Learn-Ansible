@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install package
-    ansible.buildin.yum:
+    ansible.builtin.yum:
       name: "{{item}}"
       state: installed
     #list of pckges
