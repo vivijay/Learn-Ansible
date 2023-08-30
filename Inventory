@@ -1,6 +1,6 @@
 [mongodb]
-
-roboshop-us-dev-db-mongodb-01.learndevcloud.online
+172.31.35.21
+#roboshopphg-us-dev-db-mongodb-01.learndevcloud.online
 
 
 [sql]
