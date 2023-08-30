@@ -1,12 +1,12 @@
-- name: Installing packages
+- name: Install packages
   hosts: mongodb
   become: yes
   tasks:
-    - name: Install packg
-      ansible.buildin.yum:
-        name: "{{item}}"
-        state: installed
-      #list of pckges
-      loop:
-      - nginx
-      - postfix
+  - name: Install package
+    ansible.buildin.yum:
+      name: "{{item}}"
+      state: installed
+    #list of pckges
+    loop:
+    - nginx
+    - postfix
