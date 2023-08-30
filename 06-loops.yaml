@@ -1,4 +1,4 @@
-- name: Installing the softwares
+- name: Installing packages
   hosts: mongodb
   become: yes
   tasks:
