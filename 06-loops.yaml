@@ -1,0 +1,12 @@
+- name: Installing the softwares
+  hosts: mongodb
+  become: yes
+  tasks:
+    - name: Install packg
+      ansible.buildin.yum:
+        name: "{{item}}"
+        state: installed
+      #list of pckges
+      loop:
+      - nginx
+      - postfix
